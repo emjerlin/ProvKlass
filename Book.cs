@@ -1,6 +1,6 @@
 using System;
 
-namespace ProvKlass
+namespace Prov
 {
     public class Books
     {
@@ -37,7 +37,7 @@ namespace ProvKlass
         public int Evaluate(){
             int rightPrice = actualValue * rarity;
             float r = generator.Next(0.5,1.5);
-
+            //genererar ett tal som kommer kunna multipliceras med actualValue, som kommer vara mellan 50% och 150% procent av actualValue
             int evaluatedPrice = rightPrice * r;
 
             return evaluatedPrice;
